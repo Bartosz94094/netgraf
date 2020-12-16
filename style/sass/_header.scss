@@ -1,0 +1,131 @@
+.header {
+  border-top: 5px solid #ea6464;
+
+  &__content-wrapper {
+    width: 70%;
+    margin: 40px auto;
+
+    @media (orientation: portrait), (max-width: 1024px) {
+      width: 90%;
+    }
+  }
+
+  &__main-nav-wrapper {
+    flex-grow: 2;
+    @media (orientation: portrait), (max-width: 1024px) {
+      margin: 40px 0;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (orientation: portrait), (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo-img {
+    width: 113px;
+    height: 100px;
+    background-color: #c4c4c4;
+  }
+
+  &__main-nav {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+  }
+
+  &__main-nav-item {
+    margin: 0 25px;
+    @media (orientation: portrait), (max-width: 1024px) {
+      margin: 0 10px;
+    }
+  }
+
+  &__main-nav-item-txt {
+    color: #595959;
+  }
+
+  &__extra-nav {
+    display: flex;
+  }
+
+  &__extra-nav-item:nth-child(2) {
+    margin: 0 25px;
+  }
+
+  &__form {
+    margin-top: 40px;
+    border: 8px solid #ea6464;
+    border-radius: 8px;
+    background: #ea6464;
+  }
+
+  &__form-content-wrapper {
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__search-input {
+    flex-grow: 2;
+  }
+
+  &__search-btn {
+    display: block;
+    height: 40px;
+    width: 124px;
+    color: #fff;
+    background-color: #ea6464;
+    border-radius: 5px;
+    border: 2px solid #ea6464;
+    outline: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 7px 7px 7px 0;
+    transition: 0.3s color, 0.3s background-color;
+
+    &:hover {
+      background-color: #fff;
+      color: #ea6464;
+    }
+
+    @media (max-width: 900px) {
+      width: 80px;
+    }
+  }
+
+  &__search-input {
+    height: 40px;
+    margin-left: 7px;
+    border: none;
+    outline: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #595959;
+
+    &::placeholder {
+      color: #595959;
+      opacity: 1; //Firefox
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #595959;
+    }
+
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #595959;
+    }
+  }
+}

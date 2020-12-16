@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netgraf</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style/css/style.min.css">
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="header__content-wrapper">
+                <div class="header__menu">
+                    <a href="">
+                        <div class="header__logo-img"></div>
+                    </a>
+                    <nav class="header__main-nav-wrapper">
+                        <ul class="header__main-nav">
+                            <li class="header__main-nav-item"><a class="header__main-nav-item-txt" href="">O Nas</a></li>
+                            <li class="header__main-nav-item"><a class="header__main-nav-item-txt" href="">Aktualności</a></li>
+                            <li class="header__main-nav-item"><a class="header__main-nav-item-txt" href="">Koszty dostawy</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="header__extra-nav">
+                            <li class="header__extra-nav-item"><a href=""><img src="/images/image-1.svg" alt=""></a></li>
+                            <li class="header__extra-nav-item"><a href=""><img src="/images/image-2.svg" alt=""></a></li>
+                            <li class="header__extra-nav-item"><a href=""><img src="/images/image-3.svg" alt=""></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <form class="header__form">
+                    <div class="header__form-content-wrapper">
+                        <input class="header__search-input" type="text" placeholder="Wpisz czego szukasz">
+                        <button class="header__search-btn" type="submit">Szukaj</button>
+                    </div>
+                </form>
+            </div>
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <img src="/images/keyboard.png" class="swiper-slide"></img>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </header>
+    </main>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/js/slider.js"></script>
+</html>
